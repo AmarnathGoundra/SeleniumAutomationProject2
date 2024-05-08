@@ -1,0 +1,89 @@
+{
+  "ComparisonDetails": [
+    {
+      "ValidationRules": "[TestValidationRule, TestValidationRule_Account]",
+      "ObjectId": "OBJID-1",
+      "Triggers": "[HelloWorldTrigger]",
+      "LayoutDetails": [
+        {
+          "RelatedLists": "[Notes & Attachments, Activity History]",
+          "lid": "LID-1",
+          "LayoutName": "Account-Account Layout",
+          "layoutID": "00hf200000PyfyRAAR"
+        },
+        {
+          "lid": "LID-2",
+          "LayoutName": "null",
+          "layoutID": "null"
+        }
+      ],
+      "ObjectName": "Account"
+    },
+    {
+      "ObjectId": "OBJID-2",
+      "LayoutDetails": [
+        {
+          "lid": "LID-1",
+          "LayoutName": "null",
+          "layoutID": "NA",
+          "RecordTypes": "[NA]"
+        }
+      ],
+      "ObjectName": "TestObject__ChangeEvent"
+    },
+    {
+      "ObjectId": "OBJID-3",
+      "LayoutDetails": [
+        {
+          "lid": "LID-1",
+          "LayoutName": "null",
+          "layoutID": "NA",
+          "RecordTypes": "[NA]"
+        }
+      ],
+      "ObjectName": "TestObject__Share"
+    },
+    {
+      "ValidationRules": "[TestValidationRule_TestObject, IntegrationTestValidationRule]",
+      "ObjectId": "OBJID-4",
+      "LayoutDetails": [
+        {
+          "Fields": "[Status, Case Number, Priority, Contact Name, Account Name, Case reason, Case Origin, Case Owner]",
+          "RelatedLists": "[Open Activities, Activity History]",
+          "lid": "LID-1",
+          "LayoutName": "TestObject__c-TestObject Layout",
+          "Buttons": "[Save, Upload Files, New Event, New Task]",
+          "layoutID": "00h5x00000NTmoNAAT",
+          "RecordTypes": "[Master, TestObjectRecordType]"
+        },
+        {
+          "lid": "LID-2",
+          "LayoutName": "null",
+          "layoutID": "null"
+        }
+      ],
+      "ObjectName": "Case"
+    },
+    {
+      "ValidationRules": "[TestValidationRule_TestObject, IntegrationTestValidationRule]",
+      "ObjectId": "OBJID-5",
+      "LayoutDetails": [
+        {
+          "Fields": "[Status, Case Number, Priority, Contact Name, Account Name, Case reason, Case Origin, Case Owner]",
+          "RelatedLists": "[Open Activities, Activity History]",
+          "lid": "LID-1",
+          "LayoutName": "TestObject__c-TestObject Layout",
+          "Buttons": "[Save, Upload Files, New Event, New Task]",
+          "layoutID": "00h5x00000NTmoNAAT",
+          "RecordTypes": "[Master, TestObjectRecordType]"
+        },
+        {
+          "lid": "LID-2",
+          "LayoutName": "null",
+          "layoutID": "null"
+        }
+      ],
+      "ObjectName": "Case"
+    }
+  ]
+}
