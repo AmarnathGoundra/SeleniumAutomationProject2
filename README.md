@@ -4,7 +4,7 @@ I completed this project during my training period succesffully.
 I have done Automation on Salesforce website on Account, Contact and Opportunity creation.
 The main files are easily accessable. I have done this on Eclipse.
 
-Discription
+Description
 
 E2E Opportunity Creation_Classic Case Study Automate the following steps using C fraamework
 Scenario 1: Accounts Object 
