@@ -1,0 +1,463 @@
+<project
+xmlns="http://maven.apache.org/POM/4.0.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>com.cognizant</groupId>
+<artifactId>CAAS</artifactId>
+<version>0.0.1-SNAPSHOT</version>
+<packaging>jar</packaging>
+<name>CAAS</name>
+<url>http://maven.apache.org</url>
+<properties>
+<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
+<repositories>
+<repository>
+<id>nexus</id>
+<url>http://dubv-engnex01.dubeng.local:8082/nexus/content/groups/public</url>
+</repository>
+<repository>
+<id>sonatype-releases</id>
+<url>https://oss.sonatype.org/content/repositories/releases/</url>
+</repository>
+</repositories>
+<dependencies>
+<!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured -->
+<!-- <dependency><groupId>com.jayway.restassured</groupId><artifactId>rest-assured</artifactId><version>2.9.0</version><scope>test</scope></dependency> -->
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+<dependency>
+<groupId>com.fasterxml.jackson.core</groupId>
+<artifactId>jackson-databind</artifactId>
+<version>2.13.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+<groupId>io.github.bonigarcia</groupId>
+<artifactId>webdrivermanager</artifactId>
+<version>5.6.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.mailosaur/mailosaur-java -->
+<dependency>
+<groupId>com.mailosaur</groupId>
+<artifactId>mailosaur-java</artifactId>
+<version>7.13.1</version>
+</dependency>
+<dependency>
+<groupId>org.swinglabs.swingx</groupId>
+<artifactId>swingx-all</artifactId>
+<version>1.6.4</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+<dependency>
+<groupId>com.googlecode.json-simple</groupId>
+<artifactId>json-simple</artifactId>
+<version>1.1.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot -->
+
+<dependency>
+   <groupId>ru.yandex.qatools.ashot</groupId>
+   <artifactId>ashot</artifactId>
+   <version>1.5.4</version>
+</dependency>
+<dependency>
+  <groupId>ch.randelshofer</groupId>
+  <artifactId>org.monte.media</artifactId>
+  <version>17.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+<dependency>
+   <groupId>com.google.code.gson</groupId>
+   <artifactId>gson</artifactId>
+   <version>2.10.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all -->
+<dependency>
+   <groupId>org.hamcrest</groupId>
+   <artifactId>hamcrest-all</artifactId>
+   <version>1.3</version>
+   <scope>test</scope>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+<dependency>
+<groupId>com.google.guava</groupId>
+<artifactId>guava</artifactId>
+<version>31.1-jre</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+<dependency>
+<groupId>com.fasterxml.jackson.core</groupId>
+<artifactId>jackson-core</artifactId>
+<version>2.15.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.qasymphony.qtest/qtest-sdk-java -->
+<dependency>
+<groupId>com.qasymphony.qtest</groupId>
+<artifactId>qtest-sdk-java</artifactId>
+<version>1.4.10</version>
+</dependency>
+<dependency>
+<groupId>com.jayway.jsonpath</groupId>
+<artifactId>json-path</artifactId>
+<version>2.8.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+<dependency>
+<groupId>io.rest-assured</groupId>
+<artifactId>rest-assured</artifactId>
+<version>4.5.1</version>
+<scope>test</scope>
+</dependency>
+<dependency>
+<groupId>junit</groupId>
+<artifactId>junit</artifactId>
+<version>4.12</version>
+</dependency>
+<dependency>
+<groupId>com.github.jai-imageio</groupId>
+<artifactId>jai-imageio-core</artifactId>
+<version>1.3.1</version>
+</dependency>
+<dependency>
+<groupId>org.slf4j</groupId>
+<artifactId>slf4j-api</artifactId>
+<version>1.7.25</version>
+</dependency>
+<dependency>
+<groupId>org.slf4j</groupId>
+<artifactId>log4j-over-slf4j</artifactId>
+<version>1.7.25</version>
+</dependency>
+<dependency>
+<groupId>org.slf4j</groupId>
+<artifactId>jul-to-slf4j</artifactId>
+<version>1.7.25</version>
+</dependency>
+<dependency>
+<groupId>net.java.dev.jna</groupId>
+<artifactId>jna</artifactId>
+<version>4.1.0</version>
+</dependency>
+<dependency>
+<groupId>net.sourceforge.lept4j</groupId>
+<artifactId>lept4j</artifactId>
+<version>1.4.0</version>
+</dependency>
+<dependency>
+<groupId>junit</groupId>
+<artifactId>junit-dep</artifactId>
+<version>4.11</version>
+</dependency>
+<dependency>
+<groupId>com.relevantcodes</groupId>
+<artifactId>extentreports</artifactId>
+<version>2.41.1</version>
+</dependency>
+<dependency>
+<groupId>tess4j</groupId>
+<artifactId>tess4j</artifactId>
+<scope>system</scope>
+<version>3.4.0</version>
+<systemPath>C:\Users\2327595\CAAS workspace\CAAS\lib\tess4j-3.4.0.jar</systemPath>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+<dependency>
+<groupId>org.seleniumhq.selenium</groupId>
+<artifactId>selenium-server</artifactId>
+<version>4.0.0-alpha-2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.force.api/force-metadata-api -->
+<!-- Thanks for using https://jar-download.com -->
+<dependency>
+<groupId>opencv</groupId>
+<artifactId>opencv</artifactId>
+<scope>system</scope>
+<version>320</version>
+<systemPath>C:\Users\2327595\CAAS workspace\CAAS\lib\opencv-320.jar</systemPath>
+</dependency>
+<dependency>
+<groupId>zfjcloudrestclient</groupId>
+<artifactId>zfjcloudrestclient</artifactId>
+<scope>system</scope>
+<version>3.0</version>
+<systemPath>C:\Users\2327595\CAAS workspace\CAAS\lib\zfj-cloud-rest-client-3.0.jar</systemPath>
+</dependency>
+<dependency>
+<groupId>org.json</groupId>
+<artifactId>json</artifactId>
+<version>20090211</version>
+</dependency>
+<dependency>
+<groupId>org.glassfish</groupId>
+<artifactId>javax.json</artifactId>
+<version>1.0.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
+<dependency>
+   <groupId>org.apache.pdfbox</groupId>
+   <artifactId>pdfbox</artifactId>
+   <version>3.0.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.aspose/aspose-pdf -->
+
+
+<dependency>
+<groupId>org.slf4j</groupId>
+<artifactId>slf4j-api</artifactId>
+<version>1.7.25</version>
+</dependency>
+<dependency>
+<groupId>org.slf4j</groupId>
+<artifactId>log4j-over-slf4j</artifactId>
+<version>2.0.0-alpha5</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+<dependency>
+<groupId>org.apache.logging.log4j</groupId>
+<artifactId>log4j-core</artifactId>
+<version>2.17.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+<groupId>org.testng</groupId>
+<artifactId>testng</artifactId>
+<version>7.8.0</version>
+<scope>test</scope>
+</dependency>
+<dependency>
+<groupId>commons-logging</groupId>
+<artifactId>commons-logging</artifactId>
+<version>1.1.1</version>
+</dependency>
+<dependency>
+<groupId>net.sf.opencsv</groupId>
+<artifactId>opencsv</artifactId>
+<version>2.1</version>
+</dependency>
+<dependency>
+<groupId>org.apache.poi</groupId>
+<artifactId>poi-ooxml</artifactId>
+<version>3.9</version>
+</dependency>
+<dependency>
+<groupId>xml-apis</groupId>
+<artifactId>xml-apis</artifactId>
+<version>1.4.01</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+<groupId>org.seleniumhq.selenium</groupId>
+<artifactId>selenium-java</artifactId>
+<version>4.16.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+<dependency>
+   <groupId>org.jsoup</groupId>
+   <artifactId>jsoup</artifactId>
+   <version>1.17.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.xhtmlrenderer/flying-saucer-pdf-openpdf -->
+<dependency>
+   <groupId>org.xhtmlrenderer</groupId>
+   <artifactId>flying-saucer-pdf-openpdf</artifactId>
+   <version>9.4.0</version>
+   <type>pom</type>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.openhtmltopdf/openhtmltopdf-core -->
+<dependency>
+   <groupId>com.openhtmltopdf</groupId>
+   <artifactId>openhtmltopdf-core</artifactId>
+   <version>1.0.10</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.openhtmltopdf/openhtmltopdf-pdfbox -->
+<dependency>
+   <groupId>com.openhtmltopdf</groupId>
+   <artifactId>openhtmltopdf-pdfbox</artifactId>
+   <version>1.0.6</version>
+</dependency>
+
+
+
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
+<dependency>
+<groupId>org.seleniumhq.selenium</groupId>
+<artifactId>selenium-support</artifactId>
+<version>4.1.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on -->
+<dependency>
+<groupId>org.bouncycastle</groupId>
+<artifactId>bcprov-jdk15on</artifactId>
+<version>1.70</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-safari-driver -->
+<dependency>
+<groupId>org.seleniumhq.selenium</groupId>
+<artifactId>selenium-safari-driver</artifactId>
+<version>4.1.2</version>
+</dependency>
+<dependency>
+<groupId>info.cukes</groupId>
+<artifactId>cucumber-jvm-deps</artifactId>
+<version>1.0.5</version>
+</dependency>
+<dependency>
+<groupId>info.cukes</groupId>
+<artifactId>cucumber-java</artifactId>
+<version>1.2.4</version>
+</dependency>
+<dependency>
+<groupId>info.cukes</groupId>
+<artifactId>cucumber-junit</artifactId>
+<version>1.2.4</version>
+</dependency>
+<dependency>
+<groupId>info.cukes</groupId>
+<artifactId>cucumber-testng</artifactId>
+<version>1.2.2</version>
+</dependency>
+<dependency>
+<groupId>info.cukes</groupId>
+<artifactId>cucumber-core</artifactId>
+<version>1.2.4</version>
+</dependency>
+<dependency>
+<groupId>info.cukes</groupId>
+<artifactId>cucumber-html</artifactId>
+<version>0.2.3</version>
+</dependency>
+<dependency>
+<groupId>net.masterthought</groupId>
+<artifactId>cucumber-reporting</artifactId>
+<version>1.0.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+<dependency>
+<groupId>io.appium</groupId>
+<artifactId>java-client</artifactId>
+<version>9.0.0</version>
+<exclusions>
+<exclusion>
+<groupId>org.seleniumhq.selenium</groupId>
+<artifactId>selenium-remote-driver</artifactId>
+</exclusion>
+</exclusions>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+<dependency>
+   <groupId>org.seleniumhq.selenium</groupId>
+   <artifactId>selenium-remote-driver</artifactId>
+   <version>4.16.1</version>
+</dependency>
+
+<dependency>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-surefire-plugin</artifactId>
+<version>2.19.1</version>
+</dependency>
+<dependency>
+<groupId>org.twdata.maven</groupId>
+<artifactId>mojo-executor-maven-plugin</artifactId>
+<version>2.2.0</version>
+</dependency>
+<dependency>
+<groupId>org.apache.maven.shared</groupId>
+<artifactId>maven-invoker</artifactId>
+<version>2.2</version>
+</dependency>
+<dependency>
+<groupId>com.itextpdf.tool</groupId>
+<artifactId>xmlworker</artifactId>
+<version>5.4.2</version>
+</dependency>
+<dependency>
+<groupId>org.docx4j</groupId>
+<artifactId>xhtmlrenderer</artifactId>
+<version>3.0.0</version>
+</dependency>
+<dependency>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>3.3</version>
+</dependency>
+<dependency>
+<groupId>org.ow2.asm</groupId>
+<artifactId>asm-all</artifactId>
+<version>5.2</version>
+</dependency>
+<dependency>
+<groupId>org.reflections</groupId>
+<artifactId>reflections</artifactId>
+<version>0.9.12</version>
+</dependency>
+<!-- Thanks for using https://jar-download.com -->
+<!-- https://mvnrepository.com/artifact/com.jgoodies/jgoodies-forms -->
+<dependency>
+<groupId>com.jgoodies</groupId>
+<artifactId>jgoodies-forms</artifactId>
+<version>1.6.0</version>
+</dependency>
+</dependencies>
+<build>
+<plugins>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-surefire-plugin</artifactId>
+<version>2.19.1</version>
+<configuration>
+<testFailureIgnore>true</testFailureIgnore>
+</configuration>
+</plugin>
+<plugin>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-maven-plugin</artifactId>
+</plugin>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-failsafe-plugin</artifactId>
+<version>2.22.2</version>
+</plugin>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>3.3</version>
+<configuration>
+<encoding>iso-8859-1</encoding>
+<source>1.8</source>
+<target>1.8</target>
+</configuration>
+</plugin>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-resources-plugin</artifactId>
+<version>2.6</version>
+<executions>
+<execution>
+<id>copy-resources</id>
+<phase>validate</phase>
+<goals>
+<goal>copy-resources</goal>
+</goals>
+<configuration>
+<outputDirectory>${project.basedir}\outputdir</outputDirectory>
+<resources>
+<resource>
+<directory>${project.basedir}\inputdir</directory>
+<filtering>false</filtering>
+</resource>
+</resources>
+</configuration>
+</execution>
+</executions>
+</plugin>
+</plugins>
+</build>
+<profiles></profiles>
+</project>
